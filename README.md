@@ -2,7 +2,7 @@
 ---
 
 The Project was hosted on GitHub Pages. 
-Demo can be found [HERE]()
+Demo can be found [HERE](https://zemchuks.github.io/zuriTaskOne/)
 
 Add responsiveness to a website with media queries
 
