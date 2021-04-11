@@ -36,7 +36,7 @@ p {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1100px;
     margin: 0 auto;
     overflow: auto;
     padding: 0 40px;
@@ -63,6 +63,9 @@ p {
     background-color: #304353;
     color: #88949B;
     height: 70px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .nav-bar .flex {
@@ -140,7 +143,7 @@ div.background {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
     padding: 15px 40px;
     width: 550px;
-    height: 220px;
+    height: auto;
     position: relative;
 }
 
@@ -190,12 +193,8 @@ div.snapshot-team p {
     padding-top: 0.8rem;
 }
 
-div.snapshot-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f0f0f0;
-    padding: 4rem 6rem;
+div.snapshot-box .flex {
+    flex-wrap: wrap;
 }
 
 div.snapshot-box-content {
@@ -385,11 +384,18 @@ div.footer h6 {
     font-size: 1rem;
     padding-top: 6rem;
 }
-
+  
 /*  Tablets and Under media queries */
 @media (max-width: 768px) {
     .hero-content-heading {
         text-align: center;
+    }
+
+    .hero-background-pos {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: #fff;
     }
 }
 
@@ -397,6 +403,7 @@ div.footer h6 {
 @media (max-width: 500px) {
     .nav-bar {
         height: 110px;
+       
     }
     .nav-bar .flex {
         flex-direction: column;
@@ -407,5 +414,19 @@ div.footer h6 {
     }
     .nav-bar .logo {
         font-size: 30px;
+    }
+  
+    div.hero-section {
+        background: #304353;
+        padding: 3rem;
+        margin-top: 25px;
+    }
+    div.hero-background-pos {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        right: 0px;
+        left: 66%;
     }
 }
